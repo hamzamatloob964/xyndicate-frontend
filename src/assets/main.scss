@@ -1,0 +1,167 @@
+/* ============================================= */
+/* SIZES */
+/* ============================================= */
+.size-12 {
+  font-size: 12px;
+}
+.size-13 {
+  font-size: 13px;
+}
+.size-14 {
+  font-size: 14px;
+}
+.size-16 {
+  font-size: 16px;
+}
+.size-18 {
+  font-size: 18px;
+}
+.size-20 {
+  font-size: 20px;
+}
+.size-22 {
+  font-size: 22px;
+}
+
+/* ============================================= */
+/* COLORS */
+/* ============================================= */
+.color-gray {
+  color: #58595b;
+}
+.color-lgray {
+  color: #838383;
+}
+.color-white {
+  color: white;
+}
+.bg-lgray {
+  background-color: rgb(247, 246, 250) !important;
+}
+.bg-mgray2 {
+  background-color: rgb(185, 185, 185) !important;
+}
+.bg-mgray {
+  background-color: #F7F6FC !important;
+}
+.bg-gray {
+  background-color: rgb(163, 159, 184);
+}
+.bg-white {
+  background-color: white !important;
+}
+.bg-unset {
+  background-color: unset !important;
+}
+h1, h2, h3, h4, h5, h6, span, p {
+  color: #4e4e4e;
+}
+
+/* ============================================= */
+/* WEIGHT */
+/* ============================================= */
+.weight5 {
+  font-weight: 500;
+}
+.weight6 {
+  font-weight: 600;
+}
+.weight7 {
+  font-weight: 700;
+}
+
+/* ============================================= */
+/* FLEX */
+/* ============================================= */
+.row-flex {
+  display: flex;
+  flex-direction: row;
+}
+.col-flex {
+  display: flex;
+  flex-direction: column;
+}
+.align-selfstart {
+  align-self: flex-start;
+}
+.wrap-it {
+  flex-wrap: wrap;
+}
+.no-wrap {
+  flex-wrap: nowrap;
+}
+
+/* ============================================= */
+/* MISC */
+/* ============================================= */
+.p-relative {
+  position: relative
+}
+.p-absolute {
+  position: absolute !important;
+}
+.paragraph-1 {
+  font-family: inherit; white-space: pre-line; word-break: break-word;
+}
+.pointer {
+  cursor: pointer;
+}
+.btn-hvr-dgray {
+  transition: all 0.25s;
+  padding: 10 !important
+}
+.btn-hvr-dgray:hover:not(.hover-active) {
+  color: black;
+  animation-name: buttonBounce;
+  animation-duration: 0.25s;
+  transform: scale(1.2)
+}
+.btn-hvr-dgray.hover-active {
+  color: black;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+@keyframes buttonBounce {
+  0% {transform: scale(1)}
+  100% {transform: scale(1.2)}
+}
+
+.vertical-text {
+  white-space: nowrap;
+  transform: rotateZ(-180deg); 
+  writing-mode: tb-rl
+}
+
+.br-5 {
+  border-radius: 5px !important;
+}
+
+.br-10 {
+  border-radius: 10px !important;
+}
+
+.br-15 {
+  border-radius: 15px !important;
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+}
+
+.job-content, .event-content {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media only screen and (min-width: 1000px) {
+    
+    > .px-5 {
+      width: 760px;
+    }
+  
+  }
+}
